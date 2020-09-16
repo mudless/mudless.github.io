@@ -366,13 +366,6 @@ module.exports = !DESCRIPTORS && !fails(function () {
 
 /***/ }),
 
-/***/ "0ee9":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "1276":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -571,12 +564,12 @@ for (var COLLECTION_NAME in DOMIterables) {
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3fbc228d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MapPreview.vue?vue&type=template&id=3229175a&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.map)?_c('pan-zoom',{staticClass:"map-preview",attrs:{"selector":"#map","options":_vm.options},on:{"init":_vm.onInit,"zoom":_vm.onZoom}},[_c('map-renderer',{ref:"canvas",attrs:{"show-cursor":_vm.showCursor,"show-bounds":_vm.showBounds,"map":_vm.map,"selected-rooms":_vm.selectedRooms,"show-ids":_vm.showIds},on:{"cellclick":_vm.onCellClick}}),_c('div',{staticClass:"control-buttons"},[_c('button',{staticClass:"btn btn-primary tool btn-sm",attrs:{"type":"button"},on:{"click":function($event){return _vm.zoom(-1)}}},[_c('i',{staticClass:"las la-minus fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool btn-sm",attrs:{"type":"button"},on:{"click":function($event){return _vm.resetZoom()}}},[_c('i',{staticClass:"las la-crosshairs fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool btn-sm",attrs:{"type":"button"},on:{"click":function($event){return _vm.zoom(1)}}},[_c('i',{staticClass:"las la-plus fa-fw"})])]),(_vm.showDebug)?_c('div',{staticClass:"info"},[_vm._v(" Rooms: "+_vm._s(_vm.map.rooms.length)+" "),_c('br'),_vm._v(" Paths: "+_vm._s(_vm.map.paths.length)+" ")]):_vm._e()],1):_vm._e()}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3fbc228d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MapPreview.vue?vue&type=template&id=171c1236&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.map)?_c('pan-zoom',{staticClass:"map-preview",attrs:{"selector":"#map","options":_vm.options},on:{"init":_vm.onInit,"zoom":_vm.onZoom}},[_c('map-renderer',{ref:"canvas",attrs:{"show-cursor":_vm.showCursor,"show-bounds":_vm.showBounds,"map":_vm.map,"selected-rooms":_vm.selectedRooms,"show-ids":_vm.showIds},on:{"cellclick":_vm.onCellClick}}),_c('div',{staticClass:"toolbar"},[_c('button',{staticClass:"btn btn-primary tool",attrs:{"type":"button"},on:{"click":function($event){return _vm.zoom(-1)}}},[_c('i',{staticClass:"las la-minus fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",attrs:{"type":"button"},on:{"click":function($event){return _vm.resetZoom()}}},[_c('i',{staticClass:"las la-crosshairs fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",attrs:{"type":"button"},on:{"click":function($event){return _vm.zoom(1)}}},[_c('i',{staticClass:"las la-plus fa-fw"})])]),(_vm.showDebug)?_c('div',{staticClass:"info"},[_vm._v(" Rooms: "+_vm._s(_vm.map.rooms.length)+" "),_c('br'),_vm._v(" Paths: "+_vm._s(_vm.map.paths.length)+" ")]):_vm._e()],1):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/MapPreview.vue?vue&type=template&id=3229175a&scoped=true&
+// CONCATENATED MODULE: ./src/components/MapPreview.vue?vue&type=template&id=171c1236&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
@@ -717,6 +710,25 @@ var MapRenderer = __webpack_require__("c266");
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ var MapPreviewvue_type_script_lang_js_ = ({
   components: {
@@ -789,11 +801,9 @@ var MapRenderer = __webpack_require__("c266");
       this.initialTransform.scale = 1;
       this.zoomer.zoomAbs(this.initialTransform.x, this.initialTransform.y, this.initialTransform.scale);
     },
-    onZoom: function onZoom() {
-      console.log(this.zoomer.getTransform());
-    },
+    onZoom: function onZoom() {},
     onCellClick: function onCellClick(evt) {
-      this.$emit('cellclick', evt);
+      this.$emit("cellclick", evt);
     },
     zoom: function zoom(direction) {
       if (this.zoomer == null) return;
@@ -808,8 +818,8 @@ var MapRenderer = __webpack_require__("c266");
 });
 // CONCATENATED MODULE: ./src/components/MapPreview.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_MapPreviewvue_type_script_lang_js_ = (MapPreviewvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/MapPreview.vue?vue&type=style&index=0&id=3229175a&scoped=true&lang=css&
-var MapPreviewvue_type_style_index_0_id_3229175a_scoped_true_lang_css_ = __webpack_require__("1e2a");
+// EXTERNAL MODULE: ./src/components/MapPreview.vue?vue&type=style&index=0&id=171c1236&scoped=true&lang=css&
+var MapPreviewvue_type_style_index_0_id_171c1236_scoped_true_lang_css_ = __webpack_require__("ecf9");
 
 // EXTERNAL MODULE: ./src/components/MapPreview.vue?vue&type=style&index=1&lang=css&
 var MapPreviewvue_type_style_index_1_lang_css_ = __webpack_require__("4c0b");
@@ -833,7 +843,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   null,
-  "3229175a",
+  "171c1236",
   null
   
 )
@@ -1008,17 +1018,6 @@ module.exports = function (METHOD_NAME) {
   });
 };
 
-
-/***/ }),
-
-/***/ "1e2a":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapPreview_vue_vue_type_style_index_0_id_3229175a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("bf46");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapPreview_vue_vue_type_style_index_0_id_3229175a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapPreview_vue_vue_type_style_index_0_id_3229175a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapPreview_vue_vue_type_style_index_0_id_3229175a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -1781,17 +1780,6 @@ module.exports = function (it) {
 
 /***/ }),
 
-/***/ "47da":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapEditor_vue_vue_type_style_index_1_id_16671b61_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("50de");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapEditor_vue_vue_type_style_index_1_id_16671b61_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapEditor_vue_vue_type_style_index_1_id_16671b61_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapEditor_vue_vue_type_style_index_1_id_16671b61_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "4840":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1964,13 +1952,6 @@ module.exports = function (argument) {
   return argument > 0 ? min(toInteger(argument), 0x1FFFFFFFFFFFFF) : 0; // 2 ** 53 - 1 == 9007199254740991
 };
 
-
-/***/ }),
-
-/***/ "50de":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -2620,6 +2601,13 @@ module.exports = [
   'valueOf'
 ];
 
+
+/***/ }),
+
+/***/ "79f3":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -3957,6 +3945,13 @@ module.exports = function (it) {
 
 /***/ }),
 
+/***/ "82aa":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "83ab":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4115,6 +4110,17 @@ module.exports = function (S, index, unicode) {
   return index + (unicode ? charAt(S, index).length : 1);
 };
 
+
+/***/ }),
+
+/***/ "8c6a":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapRenderer_vue_vue_type_style_index_0_id_0342cd98_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("82aa");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapRenderer_vue_vue_type_style_index_0_id_0342cd98_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapRenderer_vue_vue_type_style_index_0_id_0342cd98_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapRenderer_vue_vue_type_style_index_0_id_0342cd98_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -4385,12 +4391,12 @@ exports.BROKEN_CARET = fails(function () {
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3fbc228d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MapEditor.vue?vue&type=template&id=16671b61&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"map-editor w-100 h-100"},[(_vm.preview)?_c('div',{staticClass:"d-flex flex-column vw-100 vh-100"},[_c('div',{staticClass:"toolbar d-flex"},[_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){_vm.preview = false}}},[_vm._v("Exit Preview")]),_c('button',{staticClass:"btn btn-primary mr-auto",attrs:{"type":"button"},on:{"click":function($event){_vm.windowed = !_vm.windowed}}},[_vm._v("Windowed")])]),(_vm.windowed)?_c('div',{staticClass:"windowed"},[_c('map-preview',{attrs:{"map":_vm.map}})],1):_c('map-preview',{staticClass:"flex-grow-1",attrs:{"map":_vm.map}})],1):_c('div',{staticClass:"d-flex flex-column vw-100 vh-100"},[_c('div',{staticClass:"toolbar d-flex p-1"},[_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"New map"},on:{"click":_vm.createNew}},[_c('i',{staticClass:"las la-file fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"Save"},on:{"click":_vm.save}},[_c('i',{staticClass:"las la-save fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"Load"},on:{"click":_vm.loadFromLocalStorage}},[_c('i',{staticClass:"las la-folder-open fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"Download as JSON"},on:{"click":_vm.downloadJson}},[_c('i',{staticClass:"las la-file-export fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"Download as SVG"},on:{"click":_vm.downloadSvg}},[_c('i',{staticClass:"las la-file-image fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool ml-4",attrs:{"title":"Undo","disabled":!_vm.hasUndo},on:{"click":_vm.undo}},[_c('i',{staticClass:"las la-undo fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"Redo","disabled":!_vm.hasRedo},on:{"click":_vm.redo}},[_c('i',{staticClass:"las la-redo fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool ml-4",attrs:{"title":"Map settings"},on:{"click":function($event){_vm.editMapSettings = true}}},[_c('i',{staticClass:"las la-cog fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool ml-4",class:{ active: _vm.currentTool == 'select' },attrs:{"titlle":"Select"},on:{"click":function($event){return _vm.setTool('select')}}},[_c('i',{staticClass:"las la-mouse-pointer fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",class:{ active: _vm.currentTool == 'eraser' },attrs:{"titlle":"Eraser"},on:{"click":function($event){return _vm.setTool('eraser')}}},[_c('i',{staticClass:"las la-eraser fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",class:{ active: _vm.currentTool == 'paintrooms' },attrs:{"title":"Add rooms"},on:{"click":function($event){return _vm.setTool('paintrooms')}}},[_c('i',{staticClass:"las la-plus-square fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",class:{ active: _vm.currentTool == 'paintpaths' },attrs:{"titlie":"Add paths"},on:{"click":function($event){return _vm.setTool('paintpaths')}}},[_c('i',{staticClass:"las la-road fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",class:{ active: _vm.currentTool == 'formatpainter' },attrs:{"title":"Style painter"},on:{"click":function($event){return _vm.setTool('formatpainter')}}},[_c('i',{staticClass:"las la-brush fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool ml-4",attrs:{"title":"Show ids"},on:{"click":function($event){_vm.showIds = !_vm.showIds}}},[_c('i',{staticClass:"las la-comment fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"Show info"},on:{"click":function($event){_vm.showDebug = !_vm.showDebug}}},[_c('i',{staticClass:"las la-info fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool ml-4",attrs:{"title":"Preview"},on:{"click":function($event){_vm.preview = true}}},[_c('i',{staticClass:"las la-eye fa-fw"})])]),_c('div',{staticClass:"editor flex-grow-1"},[_c('map-preview',{ref:"preview",attrs:{"map":_vm.map,"show-cursor":true,"show-bounds":true,"selected-rooms":_vm.selectedRooms,"show-ids":_vm.showIds,"show-debug":_vm.showDebug},on:{"cellclick":_vm.onCellClick}})],1),_c('transition',{attrs:{"name":"slide-fade"}},[(_vm.selectedRoom != null || _vm.selectedPath != null || _vm.editMapSettings)?_c('div',{staticClass:"sidebar p-2"},[_c('div',{staticClass:"container"},[(_vm.selectedRooms.length > 1)?[_c('div',{staticClass:"d-flex align-items-center"},[_c('h4',{staticClass:"mr-auto"},[_vm._v("Selected Rooms: "+_vm._s(_vm.selectedRooms.length))])])]:(_vm.selectedRoom != null)?[_c('div',{staticClass:"d-flex align-items-center"},[_c('h4',{staticClass:"mr-auto"},[_vm._v("Room: "+_vm._s(_vm.selectedRoom.id))]),_c('button',{staticClass:"btn btn-link text-white btn-lg",attrs:{"type":"button"},on:{"click":function($event){_vm.selectedRoom = null}}},[_c('i',{staticClass:"las la-times"})])]),_c('div',{staticClass:"row mb-2"},[_c('div',{staticClass:"toolbar d-flex"},[_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"Remove"},on:{"click":function($event){return _vm.removeRoom(_vm.selectedRoom)}}},[_c('i',{staticClass:"las la-times fa-fw"})])])]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("X")]),_c('input',{directives:[{name:"model",rawName:"v-model.number",value:(_vm.selectedRoom.x),expression:"selectedRoom.x",modifiers:{"number":true}}],staticClass:"form-control col-sm-4",attrs:{"type":"number","min":0,"max":_vm.map.width},domProps:{"value":(_vm.selectedRoom.x)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedRoom, "x", _vm._n($event.target.value))},"blur":function($event){return _vm.$forceUpdate()}}}),_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Y")]),_c('input',{directives:[{name:"model",rawName:"v-model.number",value:(_vm.selectedRoom.y),expression:"selectedRoom.y",modifiers:{"number":true}}],staticClass:"form-control col-sm-4",attrs:{"type":"number","min":0,"max":_vm.map.height},domProps:{"value":(_vm.selectedRoom.y)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedRoom, "y", _vm._n($event.target.value))},"blur":function($event){return _vm.$forceUpdate()}}})]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Shape")]),_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedRoom.shape),expression:"selectedRoom.shape"}],staticClass:"form-control col-sm-10",on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.$set(_vm.selectedRoom, "shape", $event.target.multiple ? $$selectedVal : $$selectedVal[0])}}},[_c('option',{attrs:{"value":"square"}},[_vm._v("Rectangle")]),_c('option',{attrs:{"value":"circle"}},[_vm._v("Circle")]),_c('option',{attrs:{"value":"pentagon"}},[_vm._v("Pentagon")]),_c('option',{attrs:{"value":"hexagon"}},[_vm._v("Hexagon")]),_c('option',{attrs:{"value":"octagon"}},[_vm._v("Octagon")]),_c('option',{attrs:{"value":"star"}},[_vm._v("Star")]),_c('option',{attrs:{"value":"hourglass"}},[_vm._v("Hourglass")]),_c('option',{attrs:{"value":"trapezoid"}},[_vm._v("Trapezoid")])])]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Color")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedRoom.color),expression:"selectedRoom.color"}],staticClass:"form-control col-sm-10",attrs:{"type":"text"},domProps:{"value":(_vm.selectedRoom.color)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedRoom, "color", $event.target.value)}}})]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Icon")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedRoom.icon),expression:"selectedRoom.icon"}],staticClass:"form-control col-sm-10",attrs:{"type":"text"},domProps:{"value":(_vm.selectedRoom.icon)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedRoom, "icon", $event.target.value)}}})]),_c('div',{staticClass:"form-group"},[_c('label',[_vm._v("Paths")]),_c('table',{staticClass:"table table-bordered directions-table bg-dark"},[_c('tr',[_c('td',{staticStyle:{"width":"33%"}},[(_vm.selectedRoomPaths.nw)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.nw)}}},[_vm._v(" "+_vm._s(_vm.selectedRoomPaths.nw.id)+" ")]):_vm._e()]),_c('td',{staticStyle:{"width":"33%"}},[(_vm.selectedRoomPaths.n)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.n)}}},[_vm._v(_vm._s(_vm.selectedRoomPaths.n.id))]):_vm._e()]),_c('td',{staticStyle:{"width":"33%"}},[(_vm.selectedRoomPaths.ne)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.ne)}}},[_vm._v(" "+_vm._s(_vm.selectedRoomPaths.ne.id)+" ")]):_vm._e()])]),_c('tr',[_c('td',[(_vm.selectedRoomPaths.w)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.w)}}},[_vm._v(_vm._s(_vm.selectedRoomPaths.w.id))]):_vm._e()]),_c('td'),_c('td',[(_vm.selectedRoomPaths.e)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.e)}}},[_vm._v(_vm._s(_vm.selectedRoomPaths.e.id))]):_vm._e()])]),_c('tr',[_c('td',[(_vm.selectedRoomPaths.sw)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.sw)}}},[_vm._v(" "+_vm._s(_vm.selectedRoomPaths.sw.id)+" ")]):_vm._e()]),_c('td',[(_vm.selectedRoomPaths.s)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.s)}}},[_vm._v(_vm._s(_vm.selectedRoomPaths.s.id))]):_vm._e()]),_c('td',[(_vm.selectedRoomPaths.se)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.se)}}},[_vm._v(" "+_vm._s(_vm.selectedRoomPaths.se.id)+" ")]):_vm._e()])])])])]:(_vm.selectedPath)?[_c('div',{staticClass:"d-flex align-items-center"},[_c('h4',{staticClass:"mr-auto"},[_vm._v("Path: "+_vm._s(_vm.selectedPath.id))]),_c('button',{staticClass:"btn btn-link text-white btn-lg",attrs:{"type":"button"},on:{"click":function($event){_vm.selectedPath = null}}},[_c('i',{staticClass:"las la-times"})])]),_c('div',{staticClass:"row mb-2"},[_c('div',{staticClass:"toolbar d-flex"},[_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"Remove"},on:{"click":function($event){return _vm.removePath(_vm.selectedPath)}}},[_c('i',{staticClass:"las la-times fa-fw"})]),_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"Reverse"},on:{"click":function($event){return _vm.reversePath(_vm.selectedPath)}}},[_c('i',{staticClass:"las la-retweet fa-fw"})])])]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Source")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedPath.source),expression:"selectedPath.source"}],staticClass:"form-control col-sm-4",attrs:{"type":"text"},domProps:{"value":(_vm.selectedPath.source)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedPath, "source", $event.target.value)}}}),_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Target")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedPath.target),expression:"selectedPath.target"}],staticClass:"form-control col-sm-4",attrs:{"type":"text"},domProps:{"value":(_vm.selectedPath.target)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedPath, "target", $event.target.value)}}})]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Color")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedPath.color),expression:"selectedPath.color"}],staticClass:"form-control col-sm-10",attrs:{"type":"text"},domProps:{"value":(_vm.selectedPath.color)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedPath, "color", $event.target.value)}}})]),_c('div',{staticClass:"custom-control custom-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedPath.oneWay),expression:"selectedPath.oneWay"}],staticClass:"custom-control-input",attrs:{"type":"checkbox","id":"customCheck1"},domProps:{"checked":Array.isArray(_vm.selectedPath.oneWay)?_vm._i(_vm.selectedPath.oneWay,null)>-1:(_vm.selectedPath.oneWay)},on:{"change":function($event){var $$a=_vm.selectedPath.oneWay,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.$set(_vm.selectedPath, "oneWay", $$a.concat([$$v])))}else{$$i>-1&&(_vm.$set(_vm.selectedPath, "oneWay", $$a.slice(0,$$i).concat($$a.slice($$i+1))))}}else{_vm.$set(_vm.selectedPath, "oneWay", $$c)}}}}),_c('label',{staticClass:"custom-control-label",attrs:{"for":"customCheck1"}},[_vm._v("One-way")])])]:(_vm.editMapSettings)?[_c('div',{staticClass:"d-flex align-items-center"},[_c('h4',{staticClass:"mr-auto"},[_vm._v("Map Settings")]),_c('button',{staticClass:"btn btn-link text-white btn-lg",attrs:{"type":"button"},on:{"click":function($event){_vm.editMapSettings = null}}},[_c('i',{staticClass:"las la-times"})])]),_c('div',{staticClass:"row mb-2"},[_c('div',{staticClass:"toolbar d-flex"},[_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"Compact"},on:{"click":_vm.compactMap}},[_c('i',{staticClass:"las la-expand"})]),_c('button',{staticClass:"btn btn-primary tool",attrs:{"title":"Center"},on:{"click":_vm.centerMap}},[_c('i',{staticClass:"las la-crosshairs"})])])]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Width")]),_c('input',{directives:[{name:"model",rawName:"v-model.number",value:(_vm.map.width),expression:"map.width",modifiers:{"number":true}}],staticClass:"form-control col-sm-10",attrs:{"type":"number","min":"0","max":"1000"},domProps:{"value":(_vm.map.width)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.map, "width", _vm._n($event.target.value))},"blur":function($event){return _vm.$forceUpdate()}}})]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Height")]),_c('input',{directives:[{name:"model",rawName:"v-model.number",value:(_vm.map.height),expression:"map.height",modifiers:{"number":true}}],staticClass:"form-control col-sm-10",attrs:{"type":"number","min":"0","max":"1000"},domProps:{"value":(_vm.map.height)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.map, "height", _vm._n($event.target.value))},"blur":function($event){return _vm.$forceUpdate()}}})]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Color")]),_c('input',{directives:[{name:"model",rawName:"v-model.number",value:(_vm.map.background),expression:"map.background",modifiers:{"number":true}}],staticClass:"form-control col-sm-10",attrs:{"type":"background"},domProps:{"value":(_vm.map.background)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.map, "background", _vm._n($event.target.value))},"blur":function($event){return _vm.$forceUpdate()}}})])]:_vm._e()],2)]):_vm._e()])],1)])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3fbc228d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MapEditor.vue?vue&type=template&id=6c6286bc&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"map-editor w-100 h-100"},[(_vm.preview)?_c('div',{staticClass:"d-flex flex-column vw-100 vh-100"},[_c('div',{staticClass:"toolbar d-flex"},[_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){_vm.preview = false}}},[_vm._v("Exit Preview")]),_c('button',{staticClass:"btn btn-primary mr-auto",attrs:{"type":"button"},on:{"click":function($event){_vm.windowed = !_vm.windowed}}},[_vm._v("Windowed")])]),(_vm.windowed)?_c('div',{staticClass:"windowed"},[_c('map-preview',{attrs:{"map":_vm.map}})],1):_c('map-preview',{staticClass:"flex-grow-1",attrs:{"map":_vm.map}})],1):_c('div',{staticClass:"d-flex flex-column vw-100 vh-100"},[_c('div',{staticClass:"toolbar d-flex p-1"},[_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"New map"},on:{"click":_vm.createNew}},[_c('i',{staticClass:"las la-file fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"Save"},on:{"click":_vm.save}},[_c('i',{staticClass:"las la-save fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"Load"},on:{"click":_vm.loadFromLocalStorage}},[_c('i',{staticClass:"las la-folder-open fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"Download as JSON"},on:{"click":_vm.downloadJson}},[_c('i',{staticClass:"las la-file-export fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"Download as SVG"},on:{"click":_vm.downloadSvg}},[_c('i',{staticClass:"las la-file-image fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool ml-4",attrs:{"title":"Undo","disabled":!_vm.hasUndo},on:{"click":_vm.undo}},[_c('i',{staticClass:"las la-undo fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"Redo","disabled":!_vm.hasRedo},on:{"click":_vm.redo}},[_c('i',{staticClass:"las la-redo fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool ml-4",attrs:{"title":"Map settings"},on:{"click":function($event){_vm.editMapSettings = true}}},[_c('i',{staticClass:"las la-cog fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool ml-4",class:{ active: _vm.currentTool == 'select' },attrs:{"title":"Select tool"},on:{"click":function($event){return _vm.setTool('select')}}},[_c('i',{staticClass:"las la-mouse-pointer fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",class:{ active: _vm.currentTool == 'eraser' },attrs:{"title":"Erase rooms"},on:{"click":function($event){return _vm.setTool('eraser')}}},[_c('i',{staticClass:"las la-eraser fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",class:{ active: _vm.currentTool == 'paintrooms' },attrs:{"title":"Draw rooms"},on:{"click":function($event){return _vm.setTool('paintrooms')}}},[_c('i',{staticClass:"las la-plus-square fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",class:{ active: _vm.currentTool == 'paintpaths' },attrs:{"titlie":"Draw paths"},on:{"click":function($event){return _vm.setTool('paintpaths')}}},[_c('i',{staticClass:"las la-road fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",class:{ active: _vm.currentTool == 'formatpainter' },attrs:{"title":"Style painter"},on:{"click":function($event){return _vm.setTool('formatpainter')}}},[_c('i',{staticClass:"las la-brush fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool ml-4",attrs:{"title":"Show ids"},on:{"click":function($event){_vm.showIds = !_vm.showIds}}},[_c('i',{staticClass:"las la-comment fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"Show info"},on:{"click":function($event){_vm.showDebug = !_vm.showDebug}}},[_c('i',{staticClass:"las la-info fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool ml-4",attrs:{"title":"Preview"},on:{"click":function($event){_vm.preview = true}}},[_c('i',{staticClass:"las la-eye fa-fw"})])]),_c('div',{staticClass:"editor flex-grow-1"},[_c('map-preview',{ref:"preview",attrs:{"map":_vm.map,"show-cursor":true,"show-bounds":true,"selected-rooms":_vm.selectedRooms,"show-ids":_vm.showIds,"show-debug":_vm.showDebug},on:{"cellclick":_vm.onCellClick}})],1),_c('transition',{attrs:{"name":"slide-fade"}},[(_vm.selectedRoom != null || _vm.selectedPath != null || _vm.editMapSettings)?_c('div',{staticClass:"sidebar p-2"},[_c('div',{staticClass:"container"},[(_vm.selectedRooms.length > 1)?[_c('div',{staticClass:"d-flex align-items-center"},[_c('h4',{staticClass:"mr-auto"},[_vm._v("Selected Rooms: "+_vm._s(_vm.selectedRooms.length))])])]:(_vm.selectedRoom != null)?[_c('div',{staticClass:"d-flex align-items-center"},[_c('h4',{staticClass:"mr-auto"},[_vm._v("Room: "+_vm._s(_vm.selectedRoom.id))]),_c('button',{staticClass:"btn btn-link text-white btn-lg",attrs:{"type":"button"},on:{"click":function($event){_vm.selectedRoom = null}}},[_c('i',{staticClass:"las la-times"})])]),_c('div',{staticClass:"row mb-2"},[_c('div',{staticClass:"toolbar d-flex"},[_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"Remove"},on:{"click":function($event){return _vm.removeRoom(_vm.selectedRoom)}}},[_c('i',{staticClass:"las la-times fa-fw"})])])]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("X")]),_c('input',{directives:[{name:"model",rawName:"v-model.number",value:(_vm.selectedRoom.x),expression:"selectedRoom.x",modifiers:{"number":true}}],staticClass:"form-control col-sm-4",attrs:{"type":"number","min":0,"max":_vm.map.width},domProps:{"value":(_vm.selectedRoom.x)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedRoom, "x", _vm._n($event.target.value))},"blur":function($event){return _vm.$forceUpdate()}}}),_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Y")]),_c('input',{directives:[{name:"model",rawName:"v-model.number",value:(_vm.selectedRoom.y),expression:"selectedRoom.y",modifiers:{"number":true}}],staticClass:"form-control col-sm-4",attrs:{"type":"number","min":0,"max":_vm.map.height},domProps:{"value":(_vm.selectedRoom.y)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedRoom, "y", _vm._n($event.target.value))},"blur":function($event){return _vm.$forceUpdate()}}})]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Shape")]),_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedRoom.shape),expression:"selectedRoom.shape"}],staticClass:"form-control col-sm-10",on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.$set(_vm.selectedRoom, "shape", $event.target.multiple ? $$selectedVal : $$selectedVal[0])}}},[_c('option',{attrs:{"value":"square"}},[_vm._v("Rectangle")]),_c('option',{attrs:{"value":"circle"}},[_vm._v("Circle")]),_c('option',{attrs:{"value":"pentagon"}},[_vm._v("Pentagon")]),_c('option',{attrs:{"value":"hexagon"}},[_vm._v("Hexagon")]),_c('option',{attrs:{"value":"octagon"}},[_vm._v("Octagon")]),_c('option',{attrs:{"value":"star"}},[_vm._v("Star")]),_c('option',{attrs:{"value":"hourglass"}},[_vm._v("Hourglass")]),_c('option',{attrs:{"value":"trapezoid"}},[_vm._v("Trapezoid")])])]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Color")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedRoom.color),expression:"selectedRoom.color"}],staticClass:"form-control col-sm-10",attrs:{"type":"text"},domProps:{"value":(_vm.selectedRoom.color)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedRoom, "color", $event.target.value)}}})]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Icon")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedRoom.icon),expression:"selectedRoom.icon"}],staticClass:"form-control col-sm-10",attrs:{"type":"text"},domProps:{"value":(_vm.selectedRoom.icon)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedRoom, "icon", $event.target.value)}}})]),_c('div',{staticClass:"form-group"},[_c('label',[_vm._v("Paths")]),_c('table',{staticClass:"table table-bordered directions-table bg-dark"},[_c('tr',[_c('td',{staticStyle:{"width":"33%"}},[(_vm.selectedRoomPaths.nw)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.nw)}}},[_vm._v(" "+_vm._s(_vm.selectedRoomPaths.nw.id)+" ")]):_vm._e()]),_c('td',{staticStyle:{"width":"33%"}},[(_vm.selectedRoomPaths.n)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.n)}}},[_vm._v(_vm._s(_vm.selectedRoomPaths.n.id))]):_vm._e()]),_c('td',{staticStyle:{"width":"33%"}},[(_vm.selectedRoomPaths.ne)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.ne)}}},[_vm._v(" "+_vm._s(_vm.selectedRoomPaths.ne.id)+" ")]):_vm._e()])]),_c('tr',[_c('td',[(_vm.selectedRoomPaths.w)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.w)}}},[_vm._v(_vm._s(_vm.selectedRoomPaths.w.id))]):_vm._e()]),_c('td'),_c('td',[(_vm.selectedRoomPaths.e)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.e)}}},[_vm._v(_vm._s(_vm.selectedRoomPaths.e.id))]):_vm._e()])]),_c('tr',[_c('td',[(_vm.selectedRoomPaths.sw)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.sw)}}},[_vm._v(" "+_vm._s(_vm.selectedRoomPaths.sw.id)+" ")]):_vm._e()]),_c('td',[(_vm.selectedRoomPaths.s)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.s)}}},[_vm._v(_vm._s(_vm.selectedRoomPaths.s.id))]):_vm._e()]),_c('td',[(_vm.selectedRoomPaths.se)?_c('button',{staticClass:"btn btn-primary",on:{"click":function($event){return _vm.selectPath(_vm.selectedRoomPaths.se)}}},[_vm._v(" "+_vm._s(_vm.selectedRoomPaths.se.id)+" ")]):_vm._e()])])])])]:(_vm.selectedPath)?[_c('div',{staticClass:"d-flex align-items-center"},[_c('h4',{staticClass:"mr-auto"},[_vm._v("Path: "+_vm._s(_vm.selectedPath.id))]),_c('button',{staticClass:"btn btn-link text-white btn-lg",attrs:{"type":"button"},on:{"click":function($event){_vm.selectedPath = null}}},[_c('i',{staticClass:"las la-times"})])]),_c('div',{staticClass:"row mb-2"},[_c('div',{staticClass:"toolbar d-flex"},[_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"Remove"},on:{"click":function($event){return _vm.removePath(_vm.selectedPath)}}},[_c('i',{staticClass:"las la-times fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"Reverse"},on:{"click":function($event){return _vm.reversePath(_vm.selectedPath)}}},[_c('i',{staticClass:"las la-retweet fa-fw"})])])]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Source")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedPath.source),expression:"selectedPath.source"}],staticClass:"form-control col-sm-4",attrs:{"type":"text"},domProps:{"value":(_vm.selectedPath.source)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedPath, "source", $event.target.value)}}}),_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Target")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedPath.target),expression:"selectedPath.target"}],staticClass:"form-control col-sm-4",attrs:{"type":"text"},domProps:{"value":(_vm.selectedPath.target)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedPath, "target", $event.target.value)}}})]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Color")]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedPath.color),expression:"selectedPath.color"}],staticClass:"form-control col-sm-10",attrs:{"type":"text"},domProps:{"value":(_vm.selectedPath.color)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.selectedPath, "color", $event.target.value)}}})]),_c('div',{staticClass:"custom-control custom-checkbox"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedPath.oneWay),expression:"selectedPath.oneWay"}],staticClass:"custom-control-input",attrs:{"type":"checkbox","id":"customCheck1"},domProps:{"checked":Array.isArray(_vm.selectedPath.oneWay)?_vm._i(_vm.selectedPath.oneWay,null)>-1:(_vm.selectedPath.oneWay)},on:{"change":function($event){var $$a=_vm.selectedPath.oneWay,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.$set(_vm.selectedPath, "oneWay", $$a.concat([$$v])))}else{$$i>-1&&(_vm.$set(_vm.selectedPath, "oneWay", $$a.slice(0,$$i).concat($$a.slice($$i+1))))}}else{_vm.$set(_vm.selectedPath, "oneWay", $$c)}}}}),_c('label',{staticClass:"custom-control-label",attrs:{"for":"customCheck1"}},[_vm._v("One-way")])])]:(_vm.editMapSettings)?[_c('div',{staticClass:"d-flex align-items-center"},[_c('h4',{staticClass:"mr-auto"},[_vm._v("Map Settings")]),_c('button',{staticClass:"btn btn-link text-white btn-lg",attrs:{"type":"button"},on:{"click":function($event){_vm.editMapSettings = null}}},[_c('i',{staticClass:"las la-times"})])]),_c('div',{staticClass:"row mb-2"},[_c('div',{staticClass:"toolbar d-flex"},[_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"Compact"},on:{"click":_vm.compactMap}},[_c('i',{staticClass:"las la-expand fa-fw"})]),_c('button',{directives:[{name:"b-tooltip",rawName:"v-b-tooltip.hover.bottom",modifiers:{"hover":true,"bottom":true}}],staticClass:"btn btn-primary tool",attrs:{"title":"Center"},on:{"click":_vm.centerMap}},[_c('i',{staticClass:"las la-crosshairs fa-fw"})])])]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Width")]),_c('input',{directives:[{name:"model",rawName:"v-model.number",value:(_vm.map.width),expression:"map.width",modifiers:{"number":true}}],staticClass:"form-control col-sm-10",attrs:{"type":"number","min":"0","max":"1000"},domProps:{"value":(_vm.map.width)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.map, "width", _vm._n($event.target.value))},"blur":function($event){return _vm.$forceUpdate()}}})]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Height")]),_c('input',{directives:[{name:"model",rawName:"v-model.number",value:(_vm.map.height),expression:"map.height",modifiers:{"number":true}}],staticClass:"form-control col-sm-10",attrs:{"type":"number","min":"0","max":"1000"},domProps:{"value":(_vm.map.height)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.map, "height", _vm._n($event.target.value))},"blur":function($event){return _vm.$forceUpdate()}}})]),_c('div',{staticClass:"form-group row"},[_c('label',{staticClass:"col-sm-2 col-form-label"},[_vm._v("Color")]),_c('input',{directives:[{name:"model",rawName:"v-model.number",value:(_vm.map.background),expression:"map.background",modifiers:{"number":true}}],staticClass:"form-control col-sm-10",attrs:{"type":"background"},domProps:{"value":(_vm.map.background)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.map, "background", _vm._n($event.target.value))},"blur":function($event){return _vm.$forceUpdate()}}})])]:_vm._e()],2)]):_vm._e()])],1)])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/MapEditor.vue?vue&type=template&id=16671b61&scoped=true&
+// CONCATENATED MODULE: ./src/components/MapEditor.vue?vue&type=template&id=6c6286bc&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.filter.js
 var es_array_filter = __webpack_require__("4de4");
@@ -4933,6 +4939,7 @@ var pathfinder_Pathfinder = /*#__PURE__*/function () {
 //
 //
 //
+//
 
 
 
@@ -5040,6 +5047,9 @@ var pathfinder_Pathfinder = /*#__PURE__*/function () {
 
       return output;
     }
+  },
+  created: function created() {
+    this.createNew();
   },
   methods: {
     zoom: function zoom(direction) {
@@ -5174,14 +5184,18 @@ var pathfinder_Pathfinder = /*#__PURE__*/function () {
       node[this.makeId(x, y)] = weight;
     },
     pathfind: function pathfind(x1, y1, x2, y2) {
-      if (x1 == x2 && y1 == y2) return null; // The algorithm is not very efficient so i limit the max distance to 25 cells.
+      if (x1 == x2 && y1 == y2) return null;
+      var graph = {};
+      var maxDistance = 15; // The algorithm is not very efficient so i limit the max distance to 25 cells.
       // Otherwise it takes way to long to complete
 
-      if (Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)) > 25) return null;
-      var graph = {};
+      var startX = Math.max(0, x1 - maxDistance);
+      var startY = Math.max(0, y1 - maxDistance);
+      var endX = Math.min(this.map.width - 1, x1 + maxDistance);
+      var endY = Math.min(this.map.height - 1, y1 + maxDistance);
 
-      for (var y = 0; y < this.map.height; y++) {
-        for (var x = 0; x < this.map.width; x++) {
+      for (var y = startX; y <= endX; y++) {
+        for (var x = startY; x <= endY; x++) {
           var node = {};
           this.addIfInRange(node, x - 1, y - 1, 1.414);
           this.addIfInRange(node, x, y - 1, 1);
@@ -5618,8 +5632,8 @@ var pathfinder_Pathfinder = /*#__PURE__*/function () {
 // EXTERNAL MODULE: ./src/components/MapEditor.vue?vue&type=style&index=0&lang=css&
 var MapEditorvue_type_style_index_0_lang_css_ = __webpack_require__("7361");
 
-// EXTERNAL MODULE: ./src/components/MapEditor.vue?vue&type=style&index=1&id=16671b61&scoped=true&lang=css&
-var MapEditorvue_type_style_index_1_id_16671b61_scoped_true_lang_css_ = __webpack_require__("47da");
+// EXTERNAL MODULE: ./src/components/MapEditor.vue?vue&type=style&index=1&id=6c6286bc&scoped=true&lang=css&
+var MapEditorvue_type_style_index_1_id_6c6286bc_scoped_true_lang_css_ = __webpack_require__("b6d7");
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__("2877");
@@ -5640,7 +5654,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   null,
-  "16671b61",
+  "6c6286bc",
   null
   
 )
@@ -6099,17 +6113,6 @@ module.exports = function (argument) {
 
 /***/ }),
 
-/***/ "a9a0":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapRenderer_vue_vue_type_style_index_0_id_61a24c08_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("0ee9");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapRenderer_vue_vue_type_style_index_0_id_61a24c08_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapRenderer_vue_vue_type_style_index_0_id_61a24c08_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapRenderer_vue_vue_type_style_index_0_id_61a24c08_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "a9e3":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6427,6 +6430,17 @@ $({ target: 'Object', stat: true, forced: FAILS_ON_PRIMITIVES }, {
 
 /***/ }),
 
+/***/ "b6d7":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapEditor_vue_vue_type_style_index_1_id_6c6286bc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("c608");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapEditor_vue_vue_type_style_index_1_id_6c6286bc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapEditor_vue_vue_type_style_index_1_id_6c6286bc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapEditor_vue_vue_type_style_index_1_id_6c6286bc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "b727":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6630,13 +6644,6 @@ function _createForOfIteratorHelper(o, allowArrayLike) {
 
 /***/ }),
 
-/***/ "bf46":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "c04e":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6665,12 +6672,12 @@ module.exports = function (input, PREFERRED_STRING) {
 
 // UNUSED EXPORTS: makeDefaultShapes
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3fbc228d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MapRenderer.vue?vue&type=template&id=61a24c08&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.map)?_c('svg',{staticClass:"map-renderer",attrs:{"xmlns":"http://www.w3.org/2000/svg","width":"100%","height":"100%"},on:{"mousemove":_vm.onMouseMove,"click":_vm.onClick}},[_c('defs',[_c('filter',{attrs:{"id":"drop-shadow"}},[_c('feDropShadow',{attrs:{"dx":"0","dy":"6","stdDeviation":"2","flood-color":"black","flood-opacity":"0.3"}}),_c('feDropShadow',{attrs:{"dx":"0","dy":"3","stdDeviation":"2","flood-color":"black","flood-opacity":"0.3"}}),_c('feDropShadow',{attrs:{"dx":"0","dy":"0","stdDeviation":"2","flood-color":"black","flood-opacity":"0.3"}})],1)]),_c('g',{ref:"container",attrs:{"id":"map"}},[(_vm.showBounds)?_c('rect',{attrs:{"x":"0","y":"0","width":_vm.mapWidth,"height":_vm.mapHeight,"stroke":"black","stroke-width":"2","fill-opacity":"0"}}):_vm._e(),_c('rect',{attrs:{"x":"0","y":"0","width":_vm.mapWidth,"height":_vm.mapHeight,"fill":_vm.map.background}}),_c('g',{attrs:{"filter":"url(#drop-shadow)"}},[_c('g',[_vm._l((_vm.pathSprites),function(path){return _c('g',{key:'path-shadow-' + path.id},[_c('polyline',{attrs:{"path-id":path.id,"points":path.points,"stroke":"black","stroke-width":path.strokeWidth + 6,"fill-opacity":"0"}}),(path.marker)?_c('polygon',{attrs:{"points":path.marker.points,"stroke":"black","fill":"black","stroke-width":6}}):_vm._e()])}),_vm._l((_vm.roomsSprites),function(room){return _c('g',{key:'room-shadow-' + room.id,attrs:{"transform":'translate(' + room.x + ' ' + room.y + ')'}},[_c('wrapper-element',_vm._b({attrs:{"fill":"black","stroke":room.selected ? 'white': 'black',"stroke-width":"6"}},'wrapper-element',room.shapeProps,false))],1)}),_c('g',_vm._l((_vm.pathSprites),function(path){return _c('g',{key:'path-'+path.id},[_c('polyline',{key:'path-'+path.id,attrs:{"path-id":path.id,"points":path.points,"stroke":path.color,"stroke-width":path.strokeWidth,"fill-opacity":"0"}}),(path.marker)?_c('polygon',{attrs:{"points":path.marker.points,"stroke":path.color,"fill":path.color}}):_vm._e()])}),0),_c('g',_vm._l((_vm.roomsSprites),function(room){return _c('g',{key:'room-'+room.id,attrs:{"transform":'translate(' + room.x + ' ' + room.y + ')'}},[_c('wrapper-element',_vm._b({attrs:{"fill":room.fillColor}},'wrapper-element',room.shapeProps,false)),(room.icon)?_c('image',{attrs:{"x":-_vm.roomIconSize / 2,"y":-_vm.roomIconSize / 2,"width":_vm.roomIconSize,"height":_vm.roomIconSize,"href":room.icon}}):_vm._e(),(_vm.showIds)?_c('text',{attrs:{"dominant-baseline":"middle","text-anchor":"middle","fill":"white","font-size":"12"}},[_vm._v(_vm._s(room.id))]):_vm._e()],1)}),0)],2)]),(_vm.showCursor && _vm.cursorPosition)?_c('rect',{attrs:{"x":_vm.cursorPosition.x - _vm.tileSize / 2,"y":_vm.cursorPosition.y - _vm.tileSize / 2,"width":_vm.tileSize,"height":_vm.tileSize,"stroke":"white","fill-opacity":"0","stroke-width":"1","stroke-dasharray":"2 4"}}):_vm._e()])]):_vm._e()}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3fbc228d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MapRenderer.vue?vue&type=template&id=0342cd98&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.map)?_c('svg',{staticClass:"map-renderer",attrs:{"xmlns":"http://www.w3.org/2000/svg","width":"100%","height":"100%"},on:{"mousemove":_vm.onMouseMove,"click":_vm.onClick}},[_c('defs',[_c('filter',{attrs:{"id":"drop-shadow"}},[_c('feDropShadow',{attrs:{"dx":"0","dy":"6","stdDeviation":"2","flood-color":"black","flood-opacity":"0.3"}}),_c('feDropShadow',{attrs:{"dx":"0","dy":"3","stdDeviation":"2","flood-color":"black","flood-opacity":"0.3"}})],1)]),_c('g',{ref:"container",attrs:{"id":"map"}},[(_vm.showBounds)?_c('rect',{attrs:{"x":"0","y":"0","width":_vm.mapWidth,"height":_vm.mapHeight,"stroke":"black","stroke-width":"2","fill-opacity":"0"}}):_vm._e(),_c('rect',{attrs:{"x":"0","y":"0","width":_vm.mapWidth,"height":_vm.mapHeight,"fill":_vm.map.background}}),_c('g',{attrs:{"filter":_vm.showShadows ? 'url(#drop-shadow)' : null}},[_c('g',{attrs:{"name":"outline"}},[_vm._l((_vm.pathSprites),function(path){return _c('g',{key:'path-shadow-' + path.id},[_c('polyline',{attrs:{"path-id":path.id,"points":path.points,"stroke":"black","stroke-width":path.strokeWidth + 6,"fill-opacity":"0"}}),(path.marker)?_c('polygon',{attrs:{"points":path.marker.points,"stroke":"black","fill":"black","stroke-width":6}}):_vm._e()])}),_vm._l((_vm.roomsSprites),function(room){return _c('g',{key:'room-shadow-' + room.id,attrs:{"transform":'translate(' + room.x + ' ' + room.y + ')'}},[_c('wrapper-element',_vm._b({attrs:{"fill":"black","stroke":room.selected ? 'white': 'black',"stroke-width":"6"}},'wrapper-element',room.shapeProps,false))],1)})],2),_c('g',[_c('g',_vm._l((_vm.pathSprites),function(path){return _c('g',{key:'path-'+path.id},[_c('polyline',{key:'path-'+path.id,attrs:{"path-id":path.id,"points":path.points,"stroke":path.color,"stroke-width":path.strokeWidth,"fill-opacity":"0"}}),(path.marker)?_c('polygon',{attrs:{"points":path.marker.points,"stroke":path.color,"fill":path.color}}):_vm._e()])}),0),_c('g',_vm._l((_vm.roomsSprites),function(room){return _c('g',{key:'room-'+room.id,attrs:{"transform":'translate(' + room.x + ' ' + room.y + ')'}},[_c('wrapper-element',_vm._b({attrs:{"fill":room.fillColor}},'wrapper-element',room.shapeProps,false)),(room.icon)?_c('image',{attrs:{"x":-_vm.roomIconSize / 2,"y":-_vm.roomIconSize / 2,"width":_vm.roomIconSize,"height":_vm.roomIconSize,"href":room.icon}}):_vm._e(),(_vm.showIds)?_c('text',{attrs:{"dominant-baseline":"middle","text-anchor":"middle","fill":"white","font-size":"12"}},[_vm._v(_vm._s(room.id))]):_vm._e()],1)}),0)])]),(_vm.showCursor && _vm.cursorPosition)?_c('rect',{attrs:{"x":_vm.cursorPosition.x - _vm.tileSize / 2,"y":_vm.cursorPosition.y - _vm.tileSize / 2,"width":_vm.tileSize,"height":_vm.tileSize,"stroke":"white","fill-opacity":"0","stroke-width":"1","stroke-dasharray":"2 4"}}):_vm._e()])]):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/MapRenderer.vue?vue&type=template&id=61a24c08&scoped=true&
+// CONCATENATED MODULE: ./src/components/MapRenderer.vue?vue&type=template&id=0342cd98&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.index-of.js
 var es_array_index_of = __webpack_require__("c975");
@@ -6728,6 +6735,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
+//
 //
 //
 //
@@ -6967,6 +6975,10 @@ function makeDefaultShapes() {
     showCursor: {
       type: Boolean,
       default: false
+    },
+    showShadows: {
+      type: Boolean,
+      default: true
     },
     shapes: {
       type: Object,
@@ -7245,8 +7257,8 @@ function makeDefaultShapes() {
 });
 // CONCATENATED MODULE: ./src/components/MapRenderer.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_MapRenderervue_type_script_lang_js_ = (MapRenderervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/MapRenderer.vue?vue&type=style&index=0&id=61a24c08&scoped=true&lang=css&
-var MapRenderervue_type_style_index_0_id_61a24c08_scoped_true_lang_css_ = __webpack_require__("a9a0");
+// EXTERNAL MODULE: ./src/components/MapRenderer.vue?vue&type=style&index=0&id=0342cd98&scoped=true&lang=css&
+var MapRenderervue_type_style_index_0_id_0342cd98_scoped_true_lang_css_ = __webpack_require__("8c6a");
 
 // CONCATENATED MODULE: ./src/components/MapRenderer.vue
 
@@ -7263,7 +7275,7 @@ var MapRenderer_component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   null,
-  "61a24c08",
+  "0342cd98",
   null
   
 )
@@ -7362,6 +7374,13 @@ function isSVGElement(element) {
 
 module.exports = false;
 
+
+/***/ }),
+
+/***/ "c608":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -8446,6 +8465,17 @@ function getRequestAnimationFrame() {
     return setTimeout(handler, 16);
   }
 }
+
+/***/ }),
+
+/***/ "ecf9":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapPreview_vue_vue_type_style_index_0_id_171c1236_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("79f3");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapPreview_vue_vue_type_style_index_0_id_171c1236_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapPreview_vue_vue_type_style_index_0_id_171c1236_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MapPreview_vue_vue_type_style_index_0_id_171c1236_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
