@@ -1,0 +1,70 @@
+<meta charset="utf-8">
+<title>mudless-maprenderer demo</title>
+
+<!-- Load required Bootstrap and BootstrapVue CSS -->
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.17.0/dist/bootstrap-vue.min.css" />
+
+<!-- Load polyfills to support older browsers -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+
+<!-- Load Vue followed by BootstrapVue -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.17.0/dist/bootstrap-vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@0.20.0/dist/axios.min.js"></script>
+
+<!-- Load the following for BootstrapVueIcons support -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.17.0/dist/bootstrap-vue-icons.min.js"></script>
+
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+
+<script src="dist/mudless-maprenderer.umd.js"></script>
+
+<link rel="stylesheet" href="dist/mudless-maprenderer.css">
+<style>
+#app {
+  background-color: #273037 !important;
+  color: white;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<div id="app">
+  <map-preview 
+  v-bind:map="map" 
+  v-bind:selected-rooms="selectedRooms" 
+  v-bind:show-cursor="true"
+  v-bind:max-zoom="2"
+  v-on:cellclick="onCellClick" />
+</div>
+<script>
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  new Vue({
+    data: {
+      map: null,
+      selectedRooms: [],
+    },
+    methods: {
+        onCellClick(evt){
+            for(var i =0; i < this.map.rooms.length; i++){
+                var room = this.map.rooms[i];
+                if(room.x == evt.x && room.y == evt.y){
+                    this.selectedRooms.splice(0, this.selectedRooms.length, room.id);
+                    return;
+                }
+            }
+        }
+    },
+    mounted: function(){
+      axios.get('map.json').then(function(response){
+        var map = response.data;
+        this.map = map;
+      }.bind(this));
+    },
+  }).$mount('#app')
+});
+</script>
